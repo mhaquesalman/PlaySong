@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".NowPlayingFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/bottom_player"
+        android:padding="5dp"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/bottom_album"
+            android:src="@drawable/cover_art_placeholder"
+            android:layout_marginEnd="10dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bototm_title"
+            android:layout_toEndOf="@id/bottom_album"
+            android:layout_toStartOf="@id/bottom_prev"
+            android:layout_marginTop="8dp"
+            android:text="Song name is here here here here"
+            android:singleLine="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bottom_artist"
+            android:layout_toEndOf="@id/bottom_album"
+            android:layout_toStartOf="@id/bottom_prev"
+            android:singleLine="true"
+            android:layout_below="@id/bototm_title"
+            android:textSize="18sp"
+            android:text="Artist is here here here here here"
+            android:textColor="@android:color/darker_gray"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/bottom_prev"
+            android:src="@drawable/ic_prev"
+            android:layout_toStartOf="@id/bottom_play_pause"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fabCustomSize="40dp"
+            android:id="@+id/bottom_play_pause"
+            android:src="@drawable/ic_play"
+            app:tint="@color/colorPrimaryDark"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/bottom_next"
+            android:backgroundTint="@android:color/white"
+            android:focusable="true"
+            android:clickable="true"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:id="@+id/bottom_next"
+            android:src="@drawable/ic_next"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"/>
+
+    </RelativeLayout>
+
+
+</FrameLayout>
