@@ -8,6 +8,7 @@ Music player application
     <li>Play music in foreground and background</li>
     <li>Show notification while playing music & control media playback from notification bar</li>
     <li>Add/Remove music in favorite list</li>
+    <li>Add/Delete music from the phone</li>
 </ul>
 
 <h4 style='margin-top:0in;margin-right:0in;margin-bottom:8.0pt;margin-left:0in;line-height:100%;font-size:25px;font-family:"Calibri","sans-serif";'>Technologies and libraries</h4>
